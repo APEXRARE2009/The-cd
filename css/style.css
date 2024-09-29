@@ -1,0 +1,334 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background: #1a1a1a;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* {
+  font-family: comfortaa, arial;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  padding: 0;
+  margin: 0;
+}
+
+ul > div {
+  padding: 0;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  outline: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.height {
+  height: 100%;
+}
+
+.input {
+  padding: 0.5vw 1vw;
+  font-size: 1.2vw;
+  -webkit-box-shadow: 0 0 0.5vw black inset, 0.5vw 0 0.5vw -0.4vw #ff007b inset;
+          box-shadow: 0 0 0.5vw black inset, 0.5vw 0 0.5vw -0.4vw #ff007b inset;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 0 0.5vw 0.5vw 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  width: 15vw;
+  height: 2.1vw;
+  border: 0.1vw solid rgba(0, 0, 0, 0.5);
+  color: #ff007b;
+  letter-spacing: 0.1vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-left: 0.18vw solid #ff007b;
+}
+
+.input:hover {
+  background: transparent;
+  border: 0.0001vw solid transparent;
+  -webkit-box-shadow: 0 0 0.5vw white inset, 0 0 0.4vw 0.1vw #ff007b;
+          box-shadow: 0 0 0.5vw white inset, 0 0 0.4vw 0.1vw #ff007b;
+  border-radius: 2vw;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.2vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #ff007b;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__block {
+  padding: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2vw;
+  -webkit-box-shadow: 0 0 1vw black, 0 0 1vw #ff007b inset;
+          box-shadow: 0 0 1vw black, 0 0 1vw #ff007b inset;
+  background: url("../img/bg-1.png") center/cover;
+  gap: 2vw 0;
+}
+.content__block-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 1vw;
+}
+.content__block-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content__block-output-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  width: 12vw;
+  height: 3vw;
+  padding: 1vw 2vw;
+  font-size: 1.58vw;
+  background: url("../img/2.png") center/cover;
+  border: 0.2vw solid rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 0.5vw #ff007b inset, 0 0 5vw rgba(0, 0, 0, 0.2) inset, 0 0 0.1vw 0.1vw rgb(220, 150, 200), 0 0 0.2vw 0.2vw #ff007b;
+          box-shadow: 0 0 0.5vw #ff007b inset, 0 0 5vw rgba(0, 0, 0, 0.2) inset, 0 0 0.1vw 0.1vw rgb(220, 150, 200), 0 0 0.2vw 0.2vw #ff007b;
+  border-radius: 1vw;
+  color: #ff007b;
+  letter-spacing: 0.1vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+.content__block-output-btn:hover {
+  font-size: 1.58vw;
+  background: transparent;
+  border: 0.0001vw solid transparent;
+  -webkit-box-shadow: 0 0 0.5vw white inset, 0 0 0.4vw 0.1vw #ff007b;
+          box-shadow: 0 0 0.5vw white inset, 0 0 0.4vw 0.1vw #ff007b;
+  border-radius: 2vw;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.2vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw #ff007b;
+  background: url("../img/2.png") center/cover;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.content__block-output-btn:active {
+  -webkit-transition: 0.12s ease;
+  transition: 0.12s ease;
+  font-size: 1.4vw;
+  width: 11.5vw;
+  background: transparent;
+  border: 0.0001vw solid #ff007b;
+  -webkit-box-shadow: 0 0 1vw 0.5vw black inset, 0 0 2vw 0.1vw #ff007b;
+          box-shadow: 0 0 1vw 0.5vw black inset, 0 0 2vw 0.1vw #ff007b;
+  border-radius: 2vw;
+  color: rgba(255, 255, 255, 0);
+  background: url("../img/2.png") center/cover;
+  letter-spacing: 0.08vw;
+  text-shadow: 0 0 0.1vw black, 0 0 0.2vw #ff007b;
+  -webkit-transform: scale(0.98, 0.98);
+          transform: scale(0.98, 0.98);
+  -webkit-animation: text 1s infinite;
+          animation: text 1s infinite;
+}
+@-webkit-keyframes text {
+  100%, 0% {
+    text-shadow: 0 0 0.1vw black, 0 0 0.2vw #ff007b;
+  }
+  5% {
+    text-shadow: -0.2vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+  20% {
+    text-shadow: 0.2vw 0.1vw 0.1vw black, -0.1vw 0.1vw 0.2vw #ff007b;
+  }
+  40% {
+    text-shadow: -0.1vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+  50% {
+    text-shadow: 0.1vw 0.1vw 0.1vw black, -0.1vw 0.1vw 0.2vw #ff007b;
+  }
+  70% {
+    text-shadow: -0.2vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+  75% {
+    text-shadow: 0.2vw 0.1vw 0.1vw black, -0.1vw 0.1vw 0.2vw #ff007b;
+  }
+  85% {
+    text-shadow: -0.2vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+}
+@keyframes text {
+  100%, 0% {
+    text-shadow: 0 0 0.1vw black, 0 0 0.2vw #ff007b;
+  }
+  5% {
+    text-shadow: -0.2vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+  20% {
+    text-shadow: 0.2vw 0.1vw 0.1vw black, -0.1vw 0.1vw 0.2vw #ff007b;
+  }
+  40% {
+    text-shadow: -0.1vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+  50% {
+    text-shadow: 0.1vw 0.1vw 0.1vw black, -0.1vw 0.1vw 0.2vw #ff007b;
+  }
+  70% {
+    text-shadow: -0.2vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+  75% {
+    text-shadow: 0.2vw 0.1vw 0.1vw black, -0.1vw 0.1vw 0.2vw #ff007b;
+  }
+  85% {
+    text-shadow: -0.2vw 0 0.1vw #ff007b, 0.1vw 0 0.2vw black;
+  }
+}
+.content__block-output-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -2vw 0 0 0;
+  font-size: 1vw;
+  text-shadow: 0.1vw 0.1vw 0.1vw rgba(255, 255, 255, 0.5), 0 0 0.5vw rgba(255, 255, 255, 0.5);
+  color: black;
+  letter-spacing: 0.1vw;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.content .hover-output-num {
+  font-size: 2vw;
+  opacity: 1;
+  margin: 2vw 0 0 0;
+}
+.content .click-output-op {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+}
