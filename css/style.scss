@@ -257,6 +257,7 @@ select {
     .input {
         transform: scale(1.8, 1.8);
         width: 20vw;
+        padding: .85vw 1vw;
     }
 
     .input:hover {
@@ -276,16 +277,28 @@ select {
     }
 
     .content__block-output-num {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: -2vw 0 0 0;
         padding: 1vw 0 0 0;
         font-size: 1.5vw;
         text-shadow: .1vw .1vw .1vw #ff007b, 0 0 .5vw #ff007b;
         color: white;
-        letter-spacing: .1vw;
-        opacity: 0;
-        transition: 1s;
+        letter-spacing: .22vw;
+    }
+}
+
+@media (width <= 768px) {
+    .input {
+        transform: scale(1.8, 1.8);
+        width: 21vw;
+        padding: 1.05vw 1.05vw;
+        font-size: 1.4vw;
+    }
+
+    .content__block-input {
+        gap: 3.2vw 0;
+    }
+
+    .content__block {
+        gap: 5.2vw 0;
     }
 }

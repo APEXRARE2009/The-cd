@@ -352,6 +352,7 @@ select {
     -webkit-transform: scale(1.8, 1.8);
             transform: scale(1.8, 1.8);
     width: 20vw;
+    padding: 0.85vw 1vw;
   }
   .input:hover {
     -webkit-transform: scale(1.95, 1.95);
@@ -370,23 +371,26 @@ select {
             transform: scale(1.7, 1.7);
   }
   .content__block-output-num {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: -2vw 0 0 0;
     padding: 1vw 0 0 0;
     font-size: 1.5vw;
     text-shadow: 0.1vw 0.1vw 0.1vw #ff007b, 0 0 0.5vw #ff007b;
     color: white;
-    letter-spacing: 0.1vw;
-    opacity: 0;
-    -webkit-transition: 1s;
-    transition: 1s;
+    letter-spacing: 0.22vw;
+  }
+}
+@media (width <= 768px) {
+  .input {
+    -webkit-transform: scale(1.8, 1.8);
+            transform: scale(1.8, 1.8);
+    width: 21vw;
+    padding: 1.05vw 1.05vw;
+    font-size: 1.4vw;
+  }
+  .content__block-input {
+    gap: 3.2vw 0;
+  }
+  .content__block {
+    gap: 5.2vw 0;
   }
 }
