@@ -13,19 +13,12 @@ btn.addEventListener("click", () => {
 
 function checkInputs() {
     let isDigit = false;
-    let isDash = false;
     let isControl = false;
 
     if (event.key >= 0 && event.key <= 9) {
         isDigit = true;
     } else {
         isDigit = false;
-    }
-
-    if (event.key == "-") {
-        isDash = true;
-    } else {
-        isDash = false;
     }
 
     if (event.key == "ArrowLeft" || event.key == "ArrowRight" || event.key == "Backspace") {
@@ -35,7 +28,7 @@ function checkInputs() {
     }
 
 
-    if (isDigit == false && isDash == false && isControl == false) {
+    if (isDigit == false && isControl == false) {
         event.preventDefault();
     }
 };
